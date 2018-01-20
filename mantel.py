@@ -19,6 +19,13 @@ from scipy import mean, random, spatial, stats, std
 
 ############ INSERT monte_carlo() ############
 
+def montecarlo(list1, list2, nrandoms):
+	cc = []
+	for i < nrandoms:
+		cc.append( stats.pearson(shuffle_distances(list1),list2)[0])
+	return mean(cc), std(cc)
+	
+
 
 
 ############ END OF monte_carlo() ############
